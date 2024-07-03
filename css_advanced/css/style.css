@@ -1,0 +1,97 @@
+/* global style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "soursSansPro";
+  src: url(/fonts/SourceSansPro-Regular.otf), url(/fonts/SourceSansPro-Bold.otf),
+    url(/fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+  font-family: "spinCycle";
+  src: url(/fonts/spincycle_ot.otf);
+}
+/* global style */
+
+/* header style */
+header {
+  background-image: url(/images/Object.png);
+  background-size: cover;
+  font-family: soursSansPro;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 53px;
+
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+header ul {
+  display: flex;
+  gap: 50px;
+  color: white;
+}
+
+header button {
+  background-color: #c271ff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 32px;
+  font-weight: lighter;
+}
+
+.teachers {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teachers h2 span {
+  color: #c271ff;
+}
+.teachers h2 {
+  font-weight: light;
+  color: white;
+}
+.teachers ul {
+  display: flex;
+}
