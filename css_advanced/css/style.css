@@ -4,7 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-family: soursSansPro;
+}
 a {
   color: white;
   text-decoration: none;
@@ -19,8 +21,15 @@ ul {
 
 @font-face {
   font-family: "soursSansPro";
-  src: url(/fonts/SourceSansPro-Regular.otf), url(/fonts/SourceSansPro-Bold.otf),
-    url(/fonts/SourceSansPro-Light.otf);
+  src: url(/fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+  font-family: "soursSansProLight";
+  src: url(/fonts/SourceSansPro-ExtraLight.otf);
+}
+@font-face {
+  font-family: "soursSansProBold";
+  src: url(/fonts/SourceSansPro-Bold.otf);
 }
 @font-face {
   font-family: "spinCycle";
@@ -32,7 +41,6 @@ ul {
 header {
   background-image: url(/images/Object.png);
   background-size: cover;
-  font-family: soursSansPro;
 }
 header .container {
   display: flex;
@@ -56,7 +64,7 @@ nav ul {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 120px;
   color: white;
   font-weight: bold;
   margin-top: 60px;
@@ -77,21 +85,86 @@ header button {
   border-radius: 25px;
   margin-top: 32px;
   font-weight: lighter;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .teachers {
-  margin-top: 200px;
+  margin: 150px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .teachers h2 span {
   color: #c271ff;
+  font-family: soursSansProBold;
 }
 .teachers h2 {
-  font-weight: light;
+  font-weight: 100;
   color: white;
+  font-family: soursSansProLight;
+  margin-bottom: 30px;
+  font-size: 32px;
 }
 .teachers ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+.teachers ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.teachers ul li h3 {
+  font-size: 18px;
+}
+.teachers ul li span {
+  font-size: 16px;
+  font-family: soursSansProLight;
+}
+.teachers ul li:nth-child(3) img {
+  border-radius: 75px;
+}
+/* header style */
+
+/* qoute sectione */
+.qoute-sect {
+  height: 400px;
+  background-color: #c271ff;
+}
+
+.qoute-sect article {
+  padding-top: 125px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.qoute-sect article .qoute {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  color: white;
+  font-size: 22px;
+}
+
+.qoute-sect article .qoute h4 {
+  margin-top: 15px;
+}
+/* qoute sectione */
+
+/* toturials sectione */
+.toturials {
+  height: 700px;
+}
+
+.toturials .container {
+  display: flex;
+}
+/* toturials sectione */
