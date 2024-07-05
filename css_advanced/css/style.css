@@ -96,11 +96,13 @@ header button {
   align-items: center;
   width: 100%;
 }
-.teachers h2 span {
+.teachers h2 span,
+.toturials h2 span {
   color: #c271ff;
   font-family: soursSansProBold;
 }
-.teachers h2 {
+.teachers h2,
+.toturials h2 {
   font-weight: 100;
   color: white;
   font-family: soursSansProLight;
@@ -168,3 +170,54 @@ header button {
   display: flex;
 }
 /* toturials sectione */
+.toturials {
+  text-align: center;
+}
+.toturials .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.toturials h2 {
+  color: black;
+  margin: 100px 0px;
+}
+.toturials article {
+  width: 243px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+}
+.toturials article p {
+  color: #07162980;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.toturials .auther img {
+  width: 40px;
+}
+.toturials .play {
+  position: absolute;
+  top: 45px;
+  left: 100px;
+  cursor: pointer;
+}
+
+.toturials .auther {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.toturials .auther span {
+  color: #c271ff;
+}
+.toturials .det img {
+  margin-right: 85px;
+}
+.toturials .det span {
+  color: #c271ff;
+}
