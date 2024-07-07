@@ -207,6 +207,7 @@ header button,
   top: 45px;
   left: 100px;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .toturials .auther {
@@ -241,6 +242,7 @@ header button,
   display: flex;
   margin: 50px 0px;
   color: white;
+  justify-content: center;
 }
 .member-ship article {
   display: flex;
@@ -249,6 +251,7 @@ header button,
   align-items: center;
   text-align: center;
   cursor: pointer;
+  width: 235px;
 }
 .member-ship article h5 {
   font-size: 18px;
@@ -264,15 +267,56 @@ header button,
 /* FAQ section */
 .FAQ {
   text-align: center;
+  padding-bottom: 100px;
 }
 .FAQ h2 {
   font-size: 60px;
+  font-weight: 100;
+  font-family: soursSansProLight;
 }
 .FAQ .container {
+  margin-top: 60px;
   display: flex;
-  gap: 10px;
+  gap: 65px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .FAQ article {
-  width: 350px;
+  width: 365px;
+  text-align: start;
+}
+.FAQ article h4{
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 /* FAQ section */
+
+/* foter section */
+footer{
+  height: 250px;
+  background-color: #071629;
+  text-align: center;
+
+}
+
+footer article{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+footer article ul{
+  display: flex;
+  gap: 20px;
+}
+
+footer article ul i {
+  font-size: 25px;
+}
+footer article ul li:nth-child(2){
+  color: white;
+}
+footer p {
+  margin-top: 70px;
+  color: white;
+}
+/* foter section */
